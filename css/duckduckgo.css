@@ -1,5 +1,5 @@
 body {
-    background-color: #1C1C1C;
+    background-color: #F7F7F7;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -7,12 +7,12 @@ body {
     height: 100vh;
 }
 
-img{
+img {
     height: 160px;
 }
 
-@media only screen and (max-width: 614px){
-    img{
+@media only screen and (max-width: 614px) {
+    img {
         height: 80px;
     }
 }
@@ -25,8 +25,8 @@ img{
 }
 
 .input-group {
-    background-color: #333333;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    background-color: #fff;
+    box-shadow: 0 1px 3px #F7F7F7;
     font-size: 1.14em;
     padding: 0 0 0 .75em;
     height: 50.168px;
@@ -36,18 +36,21 @@ img{
     overflow: hidden;
     position: relative;
     display: block;
-    border: 1px solid rgba(0,0,0,0.15);
+    border: 1px solid rgba(0, 0, 0, 0.15);
 }
-@media only screen and (max-width: 425px){
-    .input-group{
+
+@media only screen and (max-width: 425px) {
+    .input-group {
         width: auto;
     }
 }
-@media only screen and (max-width: 590px){
-.input-group {
-    width: 100%;
+
+@media only screen and (max-width: 590px) {
+    .input-group {
+        width: 100%;
+    }
 }
-}
+
 .input-group>form {
     display: flex;
     height: 100%;
@@ -60,7 +63,7 @@ img{
     background: transparent;
     border: none;
     outline: 0;
-    caret-color: #fff;
+    caret-color: #000;
     color: #eeeeee;
     font-family: "DDG_ProximaNova", "DDG_ProximaNova_UI_0", "DDG_ProximaNova_UI_1", "DDG_ProximaNova_UI_2", "DDG_ProximaNova_UI_3", "DDG_ProximaNova_UI_4", "DDG_ProximaNova_UI_5", "DDG_ProximaNova_UI_6", "Proxima Nova", "Helvetica Neue", "Helvetica", "Segoe UI", "Nimbus Sans L", "Liberation Sans", "Open Sans", FreeSans, Arial, sans-serif;
     transition: .5s;
@@ -73,7 +76,7 @@ img{
     flex-direction: row-reverse;
 }
 
-.input-group #search .icon > input {
+.input-group #search .icon>input {
     height: 100%;
     display: block;
     border: none;
@@ -107,9 +110,10 @@ img{
 
 
 
-.input-group #search .icon> input[type="submit"]:hover {
-    background-color: #444444;
+.input-group #search .icon>input[type="submit"]:hover {
+    background-color: #2950BF;
 }
-p{
-    color:#898989;
+
+p {
+    color: #898989;
 }
