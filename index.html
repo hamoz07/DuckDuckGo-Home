@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DuckDuckGO -- Privacy, simplified</title>
+    <title>LifeSearch</title>
     <link rel="stylesheet" href="./css/duckduckgo.css">
     <link rel="shortcut icon" href="https://start.duckduckgo.com/favicon.ico">
 </head>
 <body>
     <div class="search-group">
         <a href="https://start.duckduckgo.com/about">
-            <img src="./imgs/icon.svg" alt="icon" >
+            <img src="./imgs/logo.png" alt="icon" >
         </a>
         <div class="input-group">
             <form id="search">
@@ -28,7 +28,6 @@
     <script>
             let search_input = document.querySelector("#search-input");
     let search_form_input_clear = document.querySelector("#search_form_input_clear");
-
     // Function to toggle the clear button visibility
     function toggleClearButtonVisibility() {
         if (search_input.value.length >= 1) {
@@ -37,13 +36,10 @@
             search_form_input_clear.style.opacity = "0";
         }
     }
-
     // Event listener to detect input changes
     search_input.addEventListener("input", toggleClearButtonVisibility);
-
     // Initial check for input content on page load
     toggleClearButtonVisibility();
-
     // Clearing the input field and hiding the clear button
     search_form_input_clear.onclick = () => {
         search_input.value = ""; // Clear the input field

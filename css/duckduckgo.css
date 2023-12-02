@@ -7,6 +7,10 @@ body {
     height: 100vh;
 }
 
+img{
+    height: 160px;
+}
+
 .search-group {
     display: flex;
     flex-direction: column;
