@@ -1,0 +1,105 @@
+body {
+    background-color: #1C1C1C;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.search-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.input-group {
+    background-color: #333333;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    font-size: 1.14em;
+    padding: 0 0 0 .75em;
+    height: 50.168px;
+    width: 564px;
+    max-width: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    display: block;
+    border: 1px solid rgba(0,0,0,0.15);
+}
+@media only screen and (max-width: 425px){
+    .input-group{
+        width: auto;
+    }
+}
+@media only screen and (max-width: 590px){
+.input-group {
+    width: 100%;
+}
+}
+.input-group>form {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.input-group input[type="text"] {
+    height: 100%;
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: 0;
+    caret-color: #fff;
+    color: #eeeeee;
+    font-family: "DDG_ProximaNova", "DDG_ProximaNova_UI_0", "DDG_ProximaNova_UI_1", "DDG_ProximaNova_UI_2", "DDG_ProximaNova_UI_3", "DDG_ProximaNova_UI_4", "DDG_ProximaNova_UI_5", "DDG_ProximaNova_UI_6", "Proxima Nova", "Helvetica Neue", "Helvetica", "Segoe UI", "Nimbus Sans L", "Liberation Sans", "Open Sans", FreeSans, Arial, sans-serif;
+    transition: .5s;
+}
+
+.input-group #search .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+}
+
+.input-group #search .icon > input {
+    height: 100%;
+    display: block;
+    border: none;
+    cursor: pointer;
+    transition: .5s;
+    margin: 0;
+}
+
+.input-group #search .icon>input[type="submit"] {
+    padding: 0 1.64em;
+    width: 50px;
+    background-image: url(../imgs/search-icon.svg);
+    background-size: cover;
+    background-color: transparent;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+
+
+.clear-search {
+    background: red;
+    padding: 0 1.64em;
+    width: 50px;
+    background-image: url(../imgs/close-icon.svg);
+    background-size: cover;
+    background-color: transparent;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+
+
+.input-group #search .icon> input[type="submit"]:hover {
+    background-color: #444444;
+}
+p{
+    color:#898989;
+}

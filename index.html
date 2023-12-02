@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DuckDuckGO -- Privacy, simplified</title>
+    <link rel="stylesheet" href="./css/duckduckgo.css">
+    <link rel="shortcut icon" href="https://start.duckduckgo.com/favicon.ico">
+</head>
+<body>
+    <div class="search-group">
+        <a href="https://start.duckduckgo.com/about">
+            <img src="./imgs/icon.svg" alt="icon" >
+        </a>
+        <div class="input-group">
+            <form id="search">
+                <input type="text" name="search-input" id="search-input" autocomplete="off" autocapitalize="off" autocorrect="off">
+                <div class="icon">
+                    <input type="submit" id="search_submit" value="">
+                    <!-- <img src="./imgs/search-icon.svg" alt="search-icon"> -->
+                    <input id="search_form_input_clear" class="clear-search" type="button">
+                </div>
+            </form>
+        </div>
+        <p>Privacy, simplified.</p>
+    </div>
+    <!-- simple showing close icon when writing only -->
+    <script>
+            let search_input = document.querySelector("#search-input");
+    let search_form_input_clear = document.querySelector("#search_form_input_clear");
+
+    // Function to toggle the clear button visibility
+    function toggleClearButtonVisibility() {
+        if (search_input.value.length >= 1) {
+            search_form_input_clear.style.opacity = "1";
+        } else {
+            search_form_input_clear.style.opacity = "0";
+        }
+    }
+
+    // Event listener to detect input changes
+    search_input.addEventListener("input", toggleClearButtonVisibility);
+
+    // Initial check for input content on page load
+    toggleClearButtonVisibility();
+
+    // Clearing the input field and hiding the clear button
+    search_form_input_clear.onclick = () => {
+        search_input.value = ""; // Clear the input field
+        search_input.focus(); // Focus on the input field
+        search_form_input_clear.style.opacity = "0"; 
+    }
+    </script>
+</body>
+</html>
