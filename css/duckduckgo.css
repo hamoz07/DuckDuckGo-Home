@@ -11,6 +11,12 @@ img{
     height: 160px;
 }
 
+@media only screen and (max-width: 614px){
+    img{
+        height: 80px;
+    }
+}
+
 .search-group {
     display: flex;
     flex-direction: column;
